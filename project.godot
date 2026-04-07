@@ -1,0 +1,44 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Reusable base template"
+run/main_scene="uid://c4f6o83nq8xnv"
+config/features=PackedStringArray("4.5", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Types="*res://Globals/types.gd"
+Global="*res://Globals/global.gd"
+
+[display]
+
+window/size/viewport_width=720
+window/size/viewport_height=1280
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_state_charts/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://Assets/": "pink",
+"res://Globals/": "orange",
+"res://Ressources/": "green",
+"res://Scenes/": "blue",
+"res://Scripts/": "red"
+}
+
+[rendering]
+
+renderer/rendering_method="mobile"
